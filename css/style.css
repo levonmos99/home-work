@@ -16,9 +16,26 @@ a {
 img {
 	max-width: 100%;
 }
-
+@font-face {
+    font-family: 'Ubuntu';
+    src: local('Ubuntu-Italic'),
+         url('../fonts/Ubuntu-Italic.woff2') format('woff2'),
+         url('../fonts/Ubuntu-Italic.woff') format('woff');
+    font-display: swap;
+    font-weight: 400;
+    font-style: italic;  
+}
+/* @font-face { 
+    font-family: 'Ubuntu';
+    src: local('Ubuntu-Light'),
+         url('../fonts/Ubuntu-Light.woff2') format('woff2'),
+         url('../fonts/Ubuntu-Light.woff') format('woff');
+         font-display: swap; 
+         font-weight: 300;
+         font-style: normal;
+} */
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Ubuntu',sans-serif;
 }
 .main {
     display: flex ;
@@ -54,7 +71,7 @@ body{
     line-height: 21px;
 }
 .conteiner {
-    max-width: 70%;
+    max-width: 1180px;
     margin: 0 auto;
     padding: 50px 0px;
 }
@@ -72,6 +89,7 @@ body{
     color: #3F2AFF;
     font-size: 60px;
     margin-bottom: 50px;
+    font-family: 'Rubik' , sans-serif;
 }
 .card-list{
     list-style-type: none;
@@ -82,11 +100,12 @@ body{
 }
 .card-item {
     position: relative;
-    width: 572px;
+    /* width: 572px; */
     height: 505px;
     background-color: white;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
     margin-bottom: 25px;
+    max-width: 572px;
 }
 .lead {
     color: #3F2AFF;
@@ -111,8 +130,8 @@ body{
 }
 .number-count {
     position: absolute;
-    top: 434px;
-    left: 502px;
+    bottom: 20px;
+    right: 20px;
     font-size: 40px;
     color: #EAEAEA;
 }
@@ -141,7 +160,7 @@ body{
     color: #3F2AFF;
     font-size: 20px;
     border: 2px solid #3F2AFF;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 25%)
 }
 .article {
     max-width: 70%;
@@ -169,5 +188,4 @@ body{
 }
 .margin {
     margin: 0px;
-}
-
+} 
